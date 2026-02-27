@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  margin: 0;
+  padding: 0;
+}
+
+.wizard-container {
+  width: 420px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.wizard-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background: #eee;
+  height: 8px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 8px;
+  background: #667eea;
+  transition: width 0.3s ease;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.next-btn {
+  background: #667eea;
+  color: white;
+}
+
+.back-btn {
+  background: #999;
+  color: white;
+}
+
+.submit-btn {
+  background: #28a745;
+  color: white;
+}
+
+.toggle-btn {
+  background: none;
+  color: #667eea;
+  font-size: 13px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  box-sizing: border-box;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #667eea;
+}
